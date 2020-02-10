@@ -1,0 +1,138 @@
+:root {
+  --text-color: rgb(98, 98, 98);
+  --grey-color: rgb(180, 173, 158);
+  --active-color: rgb(3, 169, 244);
+  --primary-font-stack: "Playfair Display", sans-serif;
+  --category-font: "Ubuntu", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--primary-font-stack);
+}
+
+/* color */
+
+.menu-item-link,
+.discription,
+.title-articl,
+.load-more-button {
+  color: var(--text-color);
+}
+
+html {
+  box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* container */
+.container {
+  width: 901px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* list style */
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* site navigation  */
+.menu-item-link,
+.discription {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.menu-item-link {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu-navigation {
+  display: flex;
+}
+.menu-item .menu-item-link {
+  display: block;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 37px;
+}
+
+.menu-navigation .menu-item:first-child {
+  padding-left: 115px;
+}
+.menu-navigation .menu-item:last-child {
+  padding-right: 115px;
+}
+
+.menu-item-link:hover,
+.menu-item-link:focus {
+  color: var(--active-color);
+  transition: 0.35s;
+  cursor: pointer;
+}
+
+/* main content */
+
+.blog-articls {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blog-articls .articl {
+  display: block;
+  width: 420px;
+  margin-right: 60px;
+  margin-bottom: 123px;
+}
+
+.blog-articls .articl:nth-child(2n + 2) {
+  margin-right: 0;
+}
+
+.blog-articls .articl:nth-child(-n + 2) {
+  margin-top: 98px;
+}
+
+.title-articl {
+  font-size: 30px;
+  line-height: 1.2;
+  margin-bottom: 37px;
+}
+
+.category {
+  font-size: 14px;
+  line-height: 1.2;
+  font-family: var(--category-font);
+  color: var(--grey-color);
+  text-transform: uppercase;
+  margin-top: 31px;
+  margin-bottom: 31px;
+}
+
+.load-more-button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  border: 1px solid rgb(98, 98, 98);
+  width: 164px;
+  height: 61px;
+  font-size: 20px;
+  line-height: 1.2;
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 70px;
+}

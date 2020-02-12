@@ -41,6 +41,10 @@ img {
   margin-left: auto;
 }
 
+.content-container {
+  padding-bottom: 70px;
+}
+
 /* list style */
 .list {
   margin: 0;
@@ -132,7 +136,6 @@ img {
   line-height: 1.2;
   text-decoration: none;
   background-color: rgb(255, 255, 255);
-  margin-bottom: 70px;
 }
 
 .load-more-button:hover {
